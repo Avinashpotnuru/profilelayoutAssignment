@@ -1,0 +1,641 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+   
+  }
+  .profile-pic{
+    border-radius: 50%;
+  
+  }
+  
+  .portfolio{
+      background-image: url('bg.jpg');
+      /* background-repeat: no-repeat; */
+      background-size: cover;
+      width: 100%;
+      /* height: 60%; */
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      object-fit: cover;
+      text-align: center;
+    }
+    .navbar{
+      display:flex;
+      width: 100%;
+      padding:20px;
+      /* background:rgb(205, 119, 134); */
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    
+    }
+    .navhead{
+      
+      color: aliceblue;
+      /* margin: 5px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; */
+     
+   
+      
+
+     
+    }
+    /* {
+      color: white;
+      padding-left: 50px;
+      padding-right: 300px; 
+      text-align: center;
+  
+      font-size: 25px;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+    } */
+    .navbar1 button{
+        margin: 10px 5px;
+      }
+    button{
+      border: 10px;
+      font-size: 16px;
+      padding: 14px;
+      padding-left: 40px;
+      padding-right: 40px;
+      align-items: center;
+      cursor: pointer;
+      /* background-color:black; */
+      background-color: transparent;
+      color: white;
+      
+      border: none;
+      border-radius: 18px;
+      font-weight: bold;
+      box-shadow: 10px 10px 10px rgba(14, 45, 172, 0.15);
+      transition: box-shadow 0.15s;
+      transition: background-color 1s,color 1s;
+    }
+    button:hover{
+      background-color:rgb(221, 170, 170);
+      opacity: 0.8;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.15s);
+      
+       
+    }
+    a{
+      color: white;
+      text-decoration: none;
+      }
+      a:hover{
+        color: #0f100f;
+      }
+    img{
+      width: 200px;
+      
+      padding: 14px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      /* height: 200px; */
+    }
+    .row{
+      padding-top:50px;
+      align-items: center;
+      text-align: center;
+      color:white;
+      font-size:30px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .row1{
+      font-size: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .row button{
+      margin-bottom: 150px;
+    }
+    p{
+      font-size: 18px;
+      text-align: center;
+      color: aliceblue;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    h2{
+      font-family: 'Times New Roman', Times, serif;
+      text-decoration: underline;
+      text-align: center;
+      font-size: 40px;
+      margin: 0px; 
+    }
+    .navbar-h{
+      padding:10px;
+      background:rgb(116, 22, 37);
+    }
+    /* Animation */
+    .hm{
+      width: 100px;
+      height: 30px;
+      background: rgb(147, 15, 15);
+      position: relative;
+      animation-name: mymove;
+      animation-duration: 20s;
+    }
+    .move{
+      width: 30px;
+      height: 30px;
+      /* background: rgb(14, 233, 90); */
+      position: relative;
+      animation-name: mymove;
+      animation-duration: 5s;
+    }
+    @keyframes mymove {
+      from {left: 0px;}
+      to {left: 100px;}
+    }
+    
+    /* About */
+    .About{
+      background-color:black ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align:center;
+      color:rgb(233, 220, 220);
+      
+      border: #912118;
+      
+      padding: 20px;
+    }
+    .about button{
+      color: #912118;
+    }
+    .experience{
+      /* background:rgb(205, 119, 134); */
+      padding: 40px;
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+    }
+    .exp-col{
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      max-width: 700px;
+     
+     
+      
+      align-items: center;
+      padding: 10px;
+      text-align: center;
+      background-color: #0f100f;
+     
+      font-size: 30px;
+      width: 90%;
+     }
+    
+    /* Education */
+    .Education{
+      padding: 20px;
+      /* background-color: rgb(34, 30, 30); */
+      background-color:black;
+      text-align:center;
+     
+      
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
+      
+    }
+    .table th,td{
+      border: 1px solid rgb(12, 12, 12);
+      text-align: center;
+      color: white;
+      background-color:rgb(220, 180, 20);
+      height: 50px;
+      padding: 10px;
+      width: 90%;
+      
+      
+    }
+    .table{
+      align-items: center;
+      padding: 50px;
+      display: block;
+    }
+    .table2{
+      display: none;
+    }
+    .table3{
+      display: none;
+    }
+   
+    
+    .table th{
+      text-transform: uppercase;
+    }
+    .projects{
+      background-color: rgb(10, 10, 10);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 90%;
+      }
+      .projectblock{
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #771891;
+        margin-top: 20px;
+  
+  
+  
+      }
+  
+  
+    .text{
+      color: white;
+      font-size: 30px;
+    }
+    
+    /* skills */
+    .Skills{
+      background: black; 
+      padding: 10px;
+      
+     
+    }
+    .Skills h2{
+      margin: none;
+    }
+    .skillblock{
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+    }
+    .skill-set{
+      padding: 50px;
+      margin: 20px;
+      /* height: 900px; */
+    }
+    .Skills p{
+      font-size: 30px;
+    }
+    .html{
+      width:90%;
+      background-color: #f44336;
+      height:40px;
+      font-size: 30px;
+      color: white;
+    }
+    .css {
+      height:40px;
+      width: 80%;
+      background-color: #a5192e;
+      font-size: 30px;
+      color: white;
+    } 
+    .js{
+      height:40px;
+      width: 80%;
+      background-color: #f44336;
+      font-size: 30px;
+      color: white;
+    } 
+    .py{
+      color: white;
+      height:40px;
+      width: 60%;
+      background-color: #a5192e;
+      font-size: 30px;
+    }
+    .sql{
+      height:40px;
+      width: 80%;
+      background-color: #f44336;
+      font-size: 30px;
+      color: white;
+    } 
+    .reactjs{
+      height:40px;
+      width: 70%;
+      background-color: #a5192e;
+      font-size: 30px;
+      color: white;
+    } 
+    .container {
+      
+      width:100%;
+      padding: 20px;
+      /* background-color:rgb(207, 238, 239); */
+      border-radius: 1px;
+      border:black ;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .blockdiv{
+      width: 90%;
+      margin-top: 20px;
+      float: left;
+      min-width: 100px;
+      height: 160px;
+      background-color: #a5192e;
+    }
+    .container img{
+      width: 90px;
+      height: 90px;
+    }
+    
+    
+    /* Style inputs */
+   
+    /* footer */
+    .row2{
+      background-color: rgb(223, 101, 133);
+      text-align: center;
+      padding: 10px;
+    }
+@media screen and (max-width:450px) {
+    .portfolio{
+        background-image: url("./HD-wallpaper-black-pattern-black-design-modern-thumbnail.jpg");
+    }
+    .table{
+      display: none;
+    }
+    .table2{
+      display: block;
+    }
+    .table3{
+      display: none;
+    }
+    .table2 th,td{
+      border: 1px solid rgb(12, 12, 12);
+      text-align: center;
+      color: white;
+      background-color:rgb(220, 180, 20);
+      height: 50px;
+      padding: 10px;
+    }
+    .table2{
+      align-items: center;
+     
+    }
+    .table2 th{
+      text-transform: uppercase;
+    }
+    .navbar{
+        display:flex;
+        width: 100%;
+       
+        
+       
+        align-items: center;
+        
+        justify-content: center;
+        /* text-align: center; */
+      
+      }
+      .navhead{
+      
+        color: aliceblue;
+        margin: 5px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+     
+        
+
+       
+      }
+      .navbar1{
+        text-align: center;
+      }
+      #navv{
+        text-align: center;
+        border: 2px solid green;
+
+      }
+      .homecontainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+        
+      }
+      .row{
+        width: 99%;
+       /* background-color: #912118; */
+       padding: 10px;
+       margin: 10px 20px;
+      }
+      .About{
+        
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .about{
+        background-color: black;
+        margin: 10px 0px;
+        padding: 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .about h2{
+        margin: 15px;
+        text-decoration: none;
+      }
+      .about p{
+       
+        margin: 10px;
+      }
+      .experience h2{
+        
+        text-decoration: none;
+        margin: 10px 0px;
+      }
+      .exp-col{
+        width: 100%;
+      }
+      .Education{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+       
+
+      }
+      .Education h2{
+        width: 90%;
+        font-size:medium;
+        margin: 20px 0px;
+        text-decoration: none;
+      }
+      .Education table{
+       padding: 0px;
+       margin: 20px;
+       max-width: 90%;
+       height: auto;
+       
+      }
+      .Skills{
+        /* background-color: aqua; */
+        width: 100%;
+      }
+      .skill-set{
+        /* background-color: yellow; */
+        padding: 10px;
+        margin: 20px 0px;
+      }
+      .skill-set p{
+        margin: 10px 0px;
+      }
+      .skill-set div{
+        margin: 20px 0px;
+
+      }
+      .row2{
+        width: 100%;
+       
+       
+
+      }
+
+      
+      
+      
+    
+
+
+    
+}
+
+@media screen and (min-width:455px) and (max-width:819px) {
+  .navhead{
+      
+    color: aliceblue;
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+ 
+    
+
+   
+  }
+  .navbar{
+        display:flex;
+        width: 100%;
+       
+      
+       
+        align-items: center;
+        
+        justify-content: center;
+        text-align: center;
+      
+    }
+    .table2{
+      display: none;
+    }
+    .table3{
+      display: block;
+    }
+    .table{
+      display: none;
+    }
+    .table3 th,td{
+      border: 1px solid rgb(12, 12, 12);
+      text-align: center;
+      color: white;
+      background-color:rgb(220, 180, 20);
+      
+      width: 90%;
+    
+      height: 50px;
+      padding: 10px;
+     
+    }
+    .table3 th{
+      text-transform: uppercase;
+    }
+    .table3{
+      align-items: center;
+     
+    }
+
+    
+}
+
+
+
+.buttonblock{
+    text-align: center;
+}
+
+
+/* CSS */
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+  color: aqua;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+.button-24 a:hover{
+  color: aliceblue;
+}
